@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.appsinventiv.medicineapp">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:name="com.appsinventiv.medicineapp.ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.appsinventiv.medicineapp.Activities.Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.appsinventiv.medicineapp.Activities.Cart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.appsinventiv.medicineapp.Activities.MyOrders"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.appsinventiv.medicineapp.Activities.ProductDescription"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.appsinventiv.medicineapp.Activities.Register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.appsinventiv.medicineapp.Activities.Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.appsinventiv.medicineapp.Activities.Checkout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.appsinventiv.medicineapp.Activities.MyProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.appsinventiv.medicineapp.Activities.OrderPlaced"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.appsinventiv.medicineapp.Activities.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.appsinventiv.medicineapp.Activities.Search"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.appsinventiv.medicineapp.Activities.LiveChat"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.appsinventiv.medicineapp.Utils.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.appsinventiv.medicineapp.Utils.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.appsinventiv.medicineapp.Activities.AboutUs" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBmmyx9-49wTXhlZ6KUfE537he7S5cIfy4" />
+
+        <activity android:name="com.appsinventiv.medicineapp.Activities.MapsActivity" />
+        <activity android:name="com.appsinventiv.medicineapp.Activities.GPSTrackerActivity" />
+        <activity android:name="com.appsinventiv.medicineapp.Activities.ViewInvoice" />
+    </application>
+
+</manifest>

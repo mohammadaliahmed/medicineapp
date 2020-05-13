@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "576645818232",
+    "firebase_url": "https://medicineapp-5a5ff.firebaseio.com",
+    "project_id": "medicineapp-5a5ff",
+    "storage_bucket": "medicineapp-5a5ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576645818232:android:40ace51d9efcccab070a8d",
+        "android_client_info": {
+          "package_name": "com.appsinventiv.medicineapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576645818232-ds8cdut1hdjvjngvo07njismsf4pi57m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appsinventiv.medicineapp",
+            "certificate_hash": "fa7734f56677f3ea319837d95cad6564d25b63ef"
+          }
+        },
+        {
+          "client_id": "576645818232-h3je9jotdiitkpjkgihovnal0ttlthut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFgO2yk4DdVpKVGq7MHferfzJmKaMcXy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576645818232-h3je9jotdiitkpjkgihovnal0ttlthut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
